@@ -1,6 +1,21 @@
+/* Reset default margin/padding */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Sticky full-width navbar */
 nav {
-  background-color: #1f2937; /* dark gray */
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #1f2937;
   padding: 1rem 2rem;
+  z-index: 1000;
+  box-sizing: border-box;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 nav ul {
@@ -9,16 +24,28 @@ nav ul {
   gap: 1.5rem;
   margin: 0;
   padding: 0;
-  justify-content: center;
+  justify-content: left;
 }
 
+nav li button,
 nav li a {
+  background: none;
+  border: none;
   color: white;
-  text-decoration: none;
   font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
   transition: color 0.2s ease-in-out;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 0;
 }
 
+nav li button:hover,
 nav li a:hover {
   color: #3b82f6; /* blue-500 */
+}
+
+html {
+  scroll-behavior: smooth;
 }

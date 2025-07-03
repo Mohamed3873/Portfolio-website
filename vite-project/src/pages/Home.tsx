@@ -1,19 +1,23 @@
-import Navbar from '../components/navbar';
-
+import Projects from "./Projects";
+import Contact from "./Contact";
+import "../styles/home.css"; 
 
 function Home() {
   return (
-    <div className="min-h-screen bg-gray-100 text-gray-900">
-      <Navbar />
-
-      <section className="flex flex-col items-center justify-center text-center py-20 px-4">
-        <h1 className="text-4xl md:text-6xl font-bold mb-4">Welcome to my portfolio</h1>
-        <p className="text-lg mb-8 max-w-xl">
+    <div className="home-container">
+      <section id="home" className="intro-section">
+        <h1 className="intro-title">Welcome to my portfolio</h1>
+        <p className="intro-text">
           I’m Mohamed, a Computer Engineering student passionate about building digital experiences.
         </p>
       </section>
+
+      <Projects />
+      <Contact />
     </div>
   );
 }
 
 export default Home;
+// This Home component serves as the main landing page for the portfolio,
+// introducing the user and linking to the Projects and Contact sections.
