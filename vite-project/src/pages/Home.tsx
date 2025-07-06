@@ -4,8 +4,8 @@ import "../styles/home.css";
 
 function Home() {
   return (
-    <div className="home-container">
-      <section id="home" className="intro-section">
+    <div id="home" className="home-container">
+      <section  className="intro-section">
         <h1 className="intro-title">Welcome to my portfolio</h1>
         <p className="intro-text">
           I’m Mohamed, a Computer Engineering student passionate about building digital experiences.
