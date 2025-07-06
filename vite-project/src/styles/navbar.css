@@ -24,7 +24,7 @@ nav ul {
   gap: 1.5rem;
   margin: 0;
   padding: 0;
-  justify-content: left;
+  justify-content: center;
 }
 
 nav li button,

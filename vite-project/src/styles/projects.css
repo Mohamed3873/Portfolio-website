@@ -1,9 +1,7 @@
-/* projects.css */
-
 .projects-section {
   padding: 4rem 2rem;
   background-color: #fff;
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto 4rem auto;
 }
 
@@ -16,27 +14,33 @@
 }
 
 .projects-list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 2rem;
+  justify-content: center;
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
 .project-item {
+  flex: 1 1 300px; /* grow/shrink, minimum 300px width */
+  max-width: 350px;
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 1.5rem 2rem;
-  margin-bottom: 2rem;
   transition: box-shadow 0.3s ease;
+  background-color: #f9f9f9;
 }
 
 .project-item:hover {
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .project-link {
   font-size: 1.5rem;
   font-weight: 600;
-  color: #2563eb; /* blue-600 */
+  color: #2563eb;
   text-decoration: none;
 }
 
