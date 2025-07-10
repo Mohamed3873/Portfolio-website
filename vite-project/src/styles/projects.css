@@ -1,6 +1,6 @@
 .projects-section {
   padding: 4rem 2rem;
-  background-color: #fff;
+  background-color: #000000;
   max-width: 1200px;
   margin: 0 auto 4rem auto;
 }
@@ -10,12 +10,11 @@
   font-weight: 700;
   text-align: center;
   margin-bottom: 3rem;
-  color: #222;
+  color: #000000;
 }
 
 .projects-list {
   display: flex;
-  flex-wrap: nowrap;
   gap: 2rem;
   justify-content: center;
   list-style: none;
@@ -24,13 +23,12 @@
 }
 
 .project-item {
-  flex: 1 1 300px; /* grow/shrink, minimum 300px width */
   max-width: 350px;
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 1.5rem 2rem;
   transition: box-shadow 0.3s ease;
-  background-color: #f9f9f9;
+  background-color: #171414;
 }
 
 .project-item:hover {
@@ -40,7 +38,7 @@
 .project-link {
   font-size: 1.5rem;
   font-weight: 600;
-  color: #2563eb;
+  color: #ffffff;
   text-decoration: none;
 }
 
