@@ -9,12 +9,13 @@
   font-size: 2.5rem;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   color: #000000;
 }
 
 .projects-list {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   justify-content: center;
   list-style: none;
@@ -23,31 +24,89 @@
 }
 
 .project-item {
-  max-width: 350px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 1.5rem 2rem;
-  transition: box-shadow 0.3s ease;
-  background-color: #171414;
+  position: relative;
+  width: 100%; 
+  height: auto;               /* Let grid control width */
+  border-radius: 16px;
+  background: #111111;
+  padding: 2rem;
+  box-sizing: border-box;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.project-item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top right, rgba(207, 213, 221, 0.4), transparent); /* blue fade */
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Ensure content is above the overlay */
+.project-item * {
+  position: relative;
+  z-index: 1;
 }
 
 .project-item:hover {
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 .project-link {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #ffffff;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #f6f6f6;
   text-decoration: none;
-}
-
-.project-link:hover {
-  text-decoration: underline;
+  word-break: break-word;
+  hyphens: auto;
+  text-align: left;
 }
 
 .project-description {
+  font-size: 1.1rem;
+  color: #ccc;
   margin-top: 0.5rem;
-  font-size: 1rem;
-  color: #555;
+  word-break: break-word;
+  hyphens: auto;
+  text-align: left;
+
 }
+
+
+/*
+Medium screens: Tablets (stack 2 per row)
+@media (max-width: 1024px) {
+  .project-item {
+    width: 45%;
+  }
+}
+
+Small screens: Mobile landscape (1 per row, centered)
+@media (max-width: 768px) {
+  .projects-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-item {
+    width: 90%;
+  }
+}
+
+Extra small screens: Mobile portrait
+@media (max-width: 480px) {
+  .project-item {
+    width: 100%;
+    height: auto; /* allow it to shrink if needed */
+    padding: 1.5rem;
+  }
+}
+*/
