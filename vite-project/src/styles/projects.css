@@ -1,7 +1,6 @@
 .projects-section {
   padding: 4rem 2rem;
-  background-color: #000000;
-  max-width: 1200px;
+  background-color: #000; /* or match your hero gradient if you want a smoother transition */
   margin: 0 auto 4rem auto;
 }
 
@@ -81,32 +80,3 @@
 }
 
 
-/*
-Medium screens: Tablets (stack 2 per row)
-@media (max-width: 1024px) {
-  .project-item {
-    width: 45%;
-  }
-}
-
-Small screens: Mobile landscape (1 per row, centered)
-@media (max-width: 768px) {
-  .projects-list {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .project-item {
-    width: 90%;
-  }
-}
-
-Extra small screens: Mobile portrait
-@media (max-width: 480px) {
-  .project-item {
-    width: 100%;
-    height: auto; /* allow it to shrink if needed */
-    padding: 1.5rem;
-  }
-}
-*/

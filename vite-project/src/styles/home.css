@@ -1,24 +1,23 @@
-/* home.css */
-
 .home-container {
-  margin: 0 auto 4rem auto;
-  padding: 4rem 2rem;
-  background-color: #000000; /* light gray background */
-  color: #111827; /* dark text */
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;;
+background-color: #010102;
 }
 
 .intro-section {
   text-align: center;
-  margin-bottom: 15rem;
+  margin-bottom: 10rem;
+  padding-top: 6rem;
+  padding-bottom: 4rem;
+  background-color: #010102;
+  position: relative;
+  overflow: hidden;
 }
 
 .intro-title {
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  color: #ffffff; /* dark slate */
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1.25rem;
+  color: white;
+  animation: fadeInUp 0.6s ease forwards;
 }
 
 .intro-text {
@@ -26,5 +25,20 @@
   max-width: 600px;
   margin: 0 auto;
   line-height: 1.6;
-  color: #ffffff; /* gray-700 */
+  color: #d1d5db;
+  animation: fadeInUp 0.6s ease forwards;
+  animation-delay: 0.2s;
+}
+
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
