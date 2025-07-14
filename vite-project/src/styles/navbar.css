@@ -4,48 +4,92 @@ html, body {
   padding: 0;
   height: 100%;
 }
-
-/* Sticky full-width navbar */
-nav {
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 2rem;
+  background-color: #000;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
   position: sticky;
   top: 0;
-  left: 0;
-  right: 0;
-  background-color: #000000;
-  padding: 1rem 2rem;
-  z-index: 1000;
-  box-sizing: border-box;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 999;
+  border-bottom: 1px solid #111;
 }
 
-nav ul {
+/* Left: Your name */
+.navbar-left {
+  font-size: 1.5rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* Right: Navigation links */
+.navbar-right {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 2rem;
   margin: 0;
   padding: 0;
-  justify-content: center;
 }
 
-nav li button,
-nav li a {
+.navbar-right li button {
+  background: none;
+  border: none;
+  color: #e5e7eb; /* light gray */
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.navbar-right li button:hover {
+  color: #ffffff;
+}
+
+
+/* Menu toggle hidden on desktop */
+.menu-toggle {
+  display: none;
   background: none;
   border: none;
   color: white;
-  font-weight: 500;
+  font-size: 2rem;
   cursor: pointer;
-  text-decoration: none;
-  transition: color 0.2s ease-in-out;
-  font-family: inherit;
-  font-size: inherit;
-  padding: 0;
 }
 
-nav li button:hover,
-nav li a:hover {
-  color: #3b82f6; /* blue-500 */
+/* Small screens */
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .navbar-right {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+
+  .navbar-right.open {
+    display: flex;
+  }
+
+  .navbar-right li {
+    width: 100%;
+  }
+
+  .navbar-right li button {
+    width: 100%;
+    text-align: right;
+    padding-left: 1rem;
+  }
 }
 
-html {
-  scroll-behavior: smooth;
-}
