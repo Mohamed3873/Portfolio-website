@@ -1,0 +1,231 @@
+/* About Section Styles */
+.about-section {
+  min-height: 100vh;
+  background-color: #000000;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 1.5rem;
+}
+
+.about-container {
+  max-width: 64rem;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Header Styles */
+.about-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.about-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .about-title {
+    font-size: 3.75rem;
+  }
+}
+
+.about-divider {
+  width: 6rem;
+  height: 0.25rem;
+  background-color: #3b82f6;
+  margin: 0 auto 3rem;
+}
+
+/* Content Layout */
+.about-content {
+  display: grid;
+  gap: 3rem;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .about-content {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Text Content */
+.about-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.about-subtitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #e5e7eb;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .about-subtitle {
+    font-size: 1.875rem;
+  }
+}
+
+.about-paragraph {
+  font-size: 1.125rem;
+  color: #d1d5db;
+  line-height: 1.75;
+}
+
+/* Skills Container */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.skill-tag {
+  padding: 0.5rem 1rem;
+  background-color: #1f2937;
+  color: #60a5fa;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: 1px solid #374151;
+}
+
+/* Image Container */
+.about-image-container {
+  position: relative;
+}
+
+.profile-placeholder {
+  width: 100%;
+  height: 24rem;
+  background-color: #111827;
+  border-radius: 0.5rem;
+  border: 1px solid #1f2937;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-icon-wrapper {
+  text-align: center;
+}
+
+.profile-icon {
+  width: 8rem;
+  height: 8rem;
+  background-color: #1f2937;
+  border-radius: 50%;
+  margin: 0 auto 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Makes it circular */
+  object-fit: cover;
+  border: 2px solid #ccc;
+}
+
+.profile-text {
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
+/* Decorative Elements */
+.decorative-circle-1 {
+  position: absolute;
+  top: -1rem;
+  right: -1rem;
+  width: 6rem;
+  height: 6rem;
+  background-color: #3b82f6;
+  border-radius: 50%;
+  opacity: 0.2;
+}
+
+.decorative-circle-2 {
+  position: absolute;
+  bottom: -1rem;
+  left: -1rem;
+  width: 4rem;
+  height: 4rem;
+  background-color: #3b82f6;
+  border-radius: 50%;
+  opacity: 0.3;
+}
+
+/* Current Work Section */
+.current-work-section {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.current-work-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #e5e7eb;
+  margin-bottom: 2rem;
+}
+
+.work-cards {
+  display: grid;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .work-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.work-card {
+  background-color: #111827;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #1f2937;
+  transition: border-color 0.3s ease;
+}
+
+.work-card:hover {
+  border-color: #3b82f6;
+}
+
+.work-card-icon {
+  width: 3rem;
+  height: 3rem;
+  background-color: #3b82f6;
+  border-radius: 0.5rem;
+  margin: 0 auto 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #ffffff;
+}
+
+.work-card-title {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.work-card-description {
+  color: #9ca3af;
+  font-size: 0.875rem;
+}

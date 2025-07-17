@@ -30,6 +30,9 @@ const Navbar: React.FC = () => {
           <button onClick={() => handleScroll("home")}>Home</button>
         </li>
         <li>
+          <button onClick={() => handleScroll("about")}>About</button>
+        </li>
+        <li>
           <button onClick={() => handleScroll("projects")}>Projects</button>
         </li>
         <li>
