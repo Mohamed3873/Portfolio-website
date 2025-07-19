@@ -1,7 +1,6 @@
 import Projects from "./Projects";
 import Contact from "./Contact";
 import "../styles/home.css"; 
-import Navbar from "../components/navbar";
 
 function Home() {
   return (
@@ -24,7 +23,6 @@ function Home() {
         
       
       </section>
-      <AboutSection />
       <Projects />
       <Contact />
     </div>
