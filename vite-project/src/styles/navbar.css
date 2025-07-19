@@ -74,13 +74,14 @@ html, body {
     position: absolute;
     top: 100%;
     right: 0;
-    background: #000;
-    width: 100%;
+    background: rgba(0, 0, 0, 0.85); /* 85% opaque black */
+    width: 15%;
     display: none;
     flex-direction: column;
     align-items: flex-end;
     padding: 1rem 2rem;
     z-index: 998;
+    border-radius: 8px 0 8px 8px;
   }
 
   .navbar-right.open {

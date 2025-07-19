@@ -1,7 +1,7 @@
 import Projects from "./Projects";
 import Contact from "./Contact";
-import AboutSection from "./About";
 import "../styles/home.css"; 
+import Navbar from "../components/navbar";
 
 function Home() {
   return (

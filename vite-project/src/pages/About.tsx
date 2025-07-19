@@ -15,17 +15,15 @@ const AboutSection: React.FC = () => {
             <h3 className="about-subtitle">Hello, I'm Mohamed</h3>
             
             <p className="about-paragraph">
-             Hi, I'm Mohamed Mahammud — a computer engineering graduate from NTNU Ålesund with a strong interest in software development and problem solving.
-             I enjoy building clean, functional applications and have experience working with web technologies like JavaScript, HTML/CSS, and REST APIs. 
-            
+              I am a computer engineering graduate from NTNU Ålesund with a strong interest in software development and problem solving. 
+               I enjoy building clean, functional applications and have experience working 
+               with web technologies like JavaScript, HTML/CSS, and REST APIs.
             </p>
-            
             <p className="about-paragraph">
-              I specialize in full-stack development, with expertise in modern frameworks 
-              and technologies. I enjoy transforming complex ideas into elegant, 
-              user-friendly solutions that make a difference.
+              I am passionate about learning new technologies and continuously improving my skills. 
+              I thrive in collaborative environments and enjoy tackling complex challenges.
             </p>
-            
+    
             <div className="skills-container">
               <span className="skill-tag">Java</span>
               <span className="skill-tag">TypeScript</span>
