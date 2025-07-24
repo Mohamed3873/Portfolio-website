@@ -1,5 +1,7 @@
 import Projects from "./Projects";
 import Contact from "./Contact";
+import About from "./About";
+
 import "../styles/home.css"; 
 
 function Home() {
@@ -23,6 +25,7 @@ function Home() {
         
       
       </section>
+      <About />
       <Projects />
       <Contact />
     </div>

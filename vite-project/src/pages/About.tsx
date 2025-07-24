@@ -43,7 +43,6 @@ const AboutSection: React.FC = () => {
                       className="profile-image"
                     />
                 </div>
-                <p className="profile-text">Profile Image</p>
               </div>
             </div>
             

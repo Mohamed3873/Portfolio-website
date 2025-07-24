@@ -1,6 +1,43 @@
 import "../styles/contact.css";
+import emailjs from "@emailjs/browser";
+import { useRef } from "react";
+import { toast } from "react-hot-toast";
+
+
 
 function Contact() {
+  
+const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+
+  const formRef = useRef<HTMLFormElement>(null);
+
+   const sendEmail = (e: React.FormEvent) => {
+    e.preventDefault();
+
+    if (formRef.current) {
+      emailjs
+        .sendForm(
+          serviceId ,
+          templateId,
+          formRef.current,
+          publicKey
+        )
+        .then(
+          () => {
+            toast.success("Message sent successfully!");
+            formRef.current?.reset();
+          },
+          (error) => {
+            toast.error("Failed to send message. Please try again later.");
+            console.error(error);
+          }
+        );
+    }
+  };
+
   return (
     <section id="contact" className="contact-section">
       <div className="contact-container">
@@ -30,7 +67,7 @@ function Contact() {
             </div>
           </div>
 
-          <form className="contact-form">
+          <form ref={formRef} onSubmit={sendEmail} className="contact-form">
             <div className="form-group">
               <label className="form-label">Name</label>
               <input 
