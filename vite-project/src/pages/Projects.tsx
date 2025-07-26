@@ -7,7 +7,7 @@ const projects = [
     title: "Personal Portfolio Website",
     description: "A modern, responsive portfolio website built with React and TypeScript.",
     technologies: ["React", "TypeScript", "CSS3", "HTML5"],
-    githubLink: "https://github.com/yourusername/portfolio-website",
+    githubLink: "https://github.com/Mohamed3873/Portfolio-website",
     image: "/portfolio.png", 
     status: "Completed",
     featured: true
