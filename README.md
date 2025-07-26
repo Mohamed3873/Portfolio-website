@@ -22,7 +22,3 @@ This is my personal portfolio website built with **React** and **Vite**, designe
 - Contact form powered by EmailJS
 - Toast notifications for form success/error
 - Component-based structure
-- Environment variables for API keys
-
-## 📂 Project Structure
-
