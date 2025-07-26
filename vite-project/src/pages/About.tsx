@@ -38,7 +38,7 @@ const AboutSection: React.FC = () => {
               <div className="profile-icon-wrapper">
                 <div className="profile-icon">
                     <img
-                       src="/src/assets/profile.jpg" 
+                       src="/profile.jpg" 
                        alt="Profile"
                       className="profile-image"
                     />

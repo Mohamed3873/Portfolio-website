@@ -8,7 +8,7 @@ const projects = [
     description: "A modern, responsive portfolio website built with React and TypeScript.",
     technologies: ["React", "TypeScript", "CSS3", "HTML5"],
     githubLink: "https://github.com/yourusername/portfolio-website",
-    image: "/src/assets/portfolio.png", 
+    image: "/portfolio.png", 
     status: "Completed",
     featured: true
 },
@@ -17,7 +17,7 @@ const projects = [
   description: "A university course project: Learniverse is a marketplace platform where users can browse and 'purchase' academic courses. Built using Spring Boot and React.",
   technologies: ["HTML", "Spring Boot", "MySQL", "Java", "JavaScript"],
   githubLink: "https://github.com/Malmis1/learniverse-project-group12",
-  image: "/src/assets/learniverse.png", 
+  image: "/learniverse.png", 
   status: "Completed",
   featured: true
 },
@@ -27,7 +27,7 @@ const projects = [
   description: "A Bachelor's thesis project: An extension for Isaac Sim creating a digital twin of Solwr's Grab robot.",
   technologies: ["Python", "Isaac Sim", "NVIDIA Omniverse", "USD", "Computer Vision", "Robotics"],
   githubLink: "https://github.com/09ejacob/Robot-World-simulation-and-digital-twin",
-  image: "/src/assets/robot.png", 
+  image: "/robot.png", 
   status: "Completed",
   featured: true
 },
