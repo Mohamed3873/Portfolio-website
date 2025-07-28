@@ -6,7 +6,7 @@ This is my personal portfolio website built with **React** and **Vite**, designe
 
 ## 🌐 Live Site
 
-👉 [View Portfolio on Netlify](https://your-netlify-url.netlify.app)
+👉 [View Portfolio on Netlify](https://mohameds-portfolio-website.netlify.app/)
 
 ## 🚀 Tech Stack
 
